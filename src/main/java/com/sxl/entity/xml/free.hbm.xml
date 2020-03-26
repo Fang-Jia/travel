@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.sxl.entity.Free" table="t_free">
+        <id name="fid" column="fid">
+            <generator class="native"/>
+        </id>
+        <property name="freeTitle" column="free_title"/>
+        <property name="freeImg" column="free_img"/>
+        <property name="price" column="price"/>
+        <property name="addTime" column="add_time"/>
+
+        <set name="orderSet" table="order_free">
+            <key column="free_id"/>
+            <many-to-many class="com.sxl.entity.Order" column="order_id"/>
+        </set>
+    </class>
+</hibernate-mapping>

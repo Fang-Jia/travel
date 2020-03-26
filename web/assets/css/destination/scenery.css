@@ -1,0 +1,220 @@
+
+/*景点概括区域样式==========================================================================*/
+.info{
+    padding: 40px 0;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #fafafa;
+}
+.info-inner{
+    margin: 0 100px;
+    padding: 0 60px;
+}
+.info .title{
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 25px;
+    line-height: 22px;
+}
+.info p{
+    color: #6C6C6C;
+}
+
+/*必游景点区域样式================================================================================*/
+.excellent{
+    padding: 40px 0;
+}
+.excellent-inner{
+    width: 100%;
+    height: 270px;
+    margin: 30px 0;
+}
+.excellent-info{
+    float: left;
+    width: 380px;
+    height: 270px;
+    display: table;
+    line-height: 24px;
+    font-size: 14px;
+}
+.excellent-info .middle{
+    display: table-cell;
+    vertical-align: middle;
+}
+.excellent-info .middle h3{
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
+}
+.middle h3 span{
+    float: left;
+    margin-right: 18px;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: #ff9d00;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+.middle a{
+    color: #ff9d00;
+}
+.excellent-info .middle p{
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+.excellent-info .middle .links{
+    color: #999;
+}
+.middle .links a:hover{
+    border-bottom: 2px solid #ff9d00;
+}
+.excellent .pic{
+    float: right;
+    width: 580px;
+    height: 270px;
+    padding-right: 17px;
+}
+.excellent .pic .large{
+    width: 380px;
+    height: 270px;
+    margin-right: 10px;
+}
+.excellent .pic div{
+    float: left;
+    display: inline;
+    width: 185px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+/*热门景点区域样式=======================================================================*/
+.hot{
+    height: 740px;
+}
+.hot h2{
+    padding: 0 60px;
+    text-align: left;
+}
+.hot-inner{
+    width: 100%;
+    height: 100%;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding: 0 30px;
+}
+.hot-inner .img-two{
+    width: 485px !important;
+}
+.hot-inner .img{
+    float: left;
+    width: 242px;
+    height: 320px;
+    display: inline;
+    margin: 0 15px 20px 0;
+}
+.img-inner{
+    margin-bottom: 10px;
+}
+
+/*图片左下角文字样式*/
+.img-two .title-common{
+    width: 475px;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0.5) 100%);
+}
+.hot-inner .img-two .title{
+    top: 42%;
+}
+.hot-inner .img-two .title6{
+    top: 85.3%;
+}
+
+.hot-inner .img-common{
+    width: 233px;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0.5) 100%);
+}
+.hot-inner .img .title2{
+    top: 21%;
+}
+.hot-inner .img .title3{
+    top: 42%;
+}
+.hot-inner .img .title4{
+    top: 64.2%;
+}
+.hot-inner .img .title5{
+    top: 85.3%;
+}
+.hot-inner .img .title7{
+    top: 64.3%;
+}
+.hot-inner .img .title8{
+    top: 85.3%;
+}
+/*隐藏区域字体*/
+.hide-font{
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0.5) 100%);
+}
+.img-two .hide-font-common{
+    width: 485px !important;
+    height: 328px !important;
+    position: absolute !important;
+    color: white !important;
+    font-size: 20px !important;
+}
+#h-img1 .hide-font{
+    top: 40px !important;
+}
+#h-img8 .hide-font{
+    top: 48.3% !important;
+}
+
+.img .hide-font-common{
+    width: 243px;
+    height: 154px;
+    position: absolute;
+    color: white;
+    font-size: 16px;
+}
+#img2 .hide-font, #img4 .hide-font{
+    top: 49px;
+}
+#img3 .hide-font, #img5 .hide-font{
+    top: 27.3%;
+}
+#img6 .hide-font, #img9 .hide-font{
+    top: 49.4%;
+}
+#img7 .hide-font, #img10 .hide-font{
+    top: 70.4%;
+}
+
+.img .hide-font h3{
+    padding: 40px 10px 10px 10px;
+}
+.img .hide-font p{
+    padding-left: 10px;
+}
+
+.img-two .hide-font h3{
+    padding: 130px 30px 10px 30px;
+}
+.img-two .hide-font p{
+    padding-left: 30px;
+}
+
+.img-hide{
+    display: none;
+}

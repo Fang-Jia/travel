@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="page" namespace="/" extends="struts-default,json-default">
+
+        <action name="page_*" class="pageAction" method="{1}">
+
+            <result name="home" type="redirect">index.jsp</result>
+
+            <result name="success" type="json">
+                <param name="root">map</param>
+            </result>
+
+<!--            直辖市-->
+            <result name="bj">/html/destination/municipality/bj.jsp</result>
+            <result name="sh">/html/destination/municipality/sh.jsp</result>
+            <result name="cq">/html/destination/municipality/cq.jsp</result>
+            <result name="tj">/html/destination/municipality/tj.jsp</result>
+
+<!--            云南-->
+            <result name="lj">/html/destination/yun-nan/lj.jsp</result>
+            <result name="dl">/html/destination/yun-nan/dl.jsp</result>
+            <result name="km">/html/destination/yun-nan/km.jsp</result>
+            <result name="xgll">/html/destination/yun-nan/xgll.jsp</result>
+            <result name="lgh">/html/destination/yun-nan/lgh.jsp</result>
+            <result name="sl">/html/destination/yun-nan/sl.jsp</result>
+            <result name="xsbn">/html/destination/yun-nan/xsbn.jsp</result>
+
+<!--            四川-->
+            <result name="cd">/html/destination/si-chuan/cd.jsp</result>
+            <result name="jzg">/html/destination/si-chuan/jzg.jsp</result>
+            <result name="dc">/html/destination/si-chuan/dc.jsp</result>
+            <result name="sd">/html/destination/si-chuan/sd.jsp</result>
+            <result name="reg">/html/destination/si-chuan/reg.jsp</result>
+            <result name="djy">/html/destination/si-chuan/djy.jsp</result>
+            <result name="ab">/html/destination/si-chuan/ab.jsp</result>
+
+<!--            浙江-->
+            <result name="hz">/html/destination/zhe-jiang/hz.jsp</result>
+            <result name="wz">/html/destination/zhe-jiang/wz.jsp</result>
+            <result name="xt">/html/destination/zhe-jiang/xt.jsp</result>
+            <result name="qdh">/html/destination/zhe-jiang/qdh.jsp</result>
+            <result name="pts">/html/destination/zhe-jiang/pts.jsp</result>
+            <result name="djd">/html/destination/zhe-jiang/djd.jsp</result>
+            <result name="nx">/html/destination/zhe-jiang/nx.jsp</result>
+
+<!--            海南-->
+            <result name="sy">/html/destination/hai-nan/sy.jsp</result>
+            <result name="wzzd">/html/destination/hai-nan/wzzd.jsp</result>
+            <result name="hk">/html/destination/hai-nan/hk.jsp</result>
+            <result name="xm">/html/destination/hai-nan/xm.jsp</result>
+            <result name="gly">/html/destination/hai-nan/gly.jsp</result>
+            <result name="wys">/html/destination/hai-nan/wys.jsp</result>
+            <result name="qz">/html/destination/hai-nan/qz.jsp</result>
+
+<!--            江苏-->
+            <result name="nj">/html/destination/jiang-su/nj.jsp</result>
+            <result name="sz">/html/destination/jiang-su/sz.jsp</result>
+            <result name="wx">/html/destination/jiang-su/wx.jsp</result>
+            <result name="yz">/html/destination/jiang-su/yz.jsp</result>
+            <result name="zz">/html/destination/jiang-su/zz.jsp</result>
+            <result name="cz">/html/destination/jiang-su/cz.jsp</result>
+            <result name="lyg">/html/destination/jiang-su/lyg.jsp</result>
+            <result name="tl">/html/destination/jiang-su/tl.jsp</result>
+
+<!--            广东-->
+            <result name="gz">/html/destination/guang-dong/gz.jsp</result>
+            <result name="sz2">/html/destination/guang-dong/sz.jsp</result>
+            <result name="zh">/html/destination/guang-dong/zh.jsp</result>
+            <result name="st">/html/destination/guang-dong/st.jsp</result>
+            <result name="gl">/html/destination/guang-dong/gl.jsp</result>
+            <result name="bh">/html/destination/guang-dong/bh.jsp</result>
+            <result name="hygz">/html/destination/guang-dong/hygz.jsp</result>
+
+<!--            西藏-->
+            <result name="ls">/html/destination/xi-zang/ls.jsp</result>
+            <result name="lz">/html/destination/xi-zang/lz.jsp</result>
+            <result name="al">/html/destination/xi-zang/al.jsp</result>
+            <result name="qdn">/html/destination/xi-zang/qdn.jsp</result>
+            <result name="qb">/html/destination/xi-zang/qb.jsp</result>
+            <result name="zy">/html/destination/xi-zang/zy.jsp</result>
+            <result name="xj">/html/destination/xi-zang/xj.jsp</result>
+            <result name="hgs">/html/destination/xi-zang/hgs.jsp</result>
+
+<!--            西北-->
+            <result name="xa">/html/destination/xi-bei/xa.jsp</result>
+            <result name="qhh">/html/destination/xi-bei/qhh.jsp</result>
+            <result name="xn">/html/destination/xi-bei/xn.jsp</result>
+            <result name="ql">/html/destination/xi-bei/ql.jsp</result>
+            <result name="dh">/html/destination/xi-bei/dh.jsp</result>
+            <result name="lz2">/html/destination/xi-bei/lz.jsp</result>
+            <result name="jyg">/html/destination/xi-bei/jyg.jsp</result>
+            <result name="xj2">/html/destination/xi-bei/xj.jsp</result>
+
+<!--            山东-->
+            <result name="qd">/html/destination/shan-dong/qd.jsp</result>
+            <result name="ts">/html/destination/shan-dong/ts.jsp</result>
+            <result name="rz">/html/destination/shan-dong/rz.jsp</result>
+            <result name="yt">/html/destination/shan-dong/yt.jsp</result>
+            <result name="pl">/html/destination/shan-dong/pl.jsp</result>
+            <result name="dt">/html/destination/shan-dong/dt.jsp</result>
+            <result name="wts">/html/destination/shan-dong/wts.jsp</result>
+
+<!--            湖南-->
+            <result name="zjj">/html/destination/hu-nan/zjj.jsp</result>
+            <result name="fh">/html/destination/hu-nan/fh.jsp</result>
+            <result name="cz2">/html/destination/hu-nan/cz.jsp</result>
+            <result name="wh">/html/destination/hu-nan/wh.jsp</result>
+            <result name="es">/html/destination/hu-nan/es.jsp</result>
+            <result name="snj">/html/destination/hu-nan/snj.jsp</result>
+
+<!--            安徽、江西-->
+            <result name="hs">/html/destination/an-hui/hs.jsp</result>
+            <result name="hc">/html/destination/an-hui/hc.jsp</result>
+            <result name="wy">/html/destination/an-hui/wy.jsp</result>
+            <result name="jdz">/html/destination/an-hui/jdz.jsp</result>
+            <result name="ls2">/html/destination/an-hui/ls.jsp</result>
+            <result name="sqs">/html/destination/an-hui/sqs.jsp</result>
+            <result name="nc">/html/destination/an-hui/nc.jsp</result>
+
+<!--            河北、河南-->
+            <result name="bdh">/html/destination/he-bei/bdh.jsp</result>
+            <result name="qhd">/html/destination/he-bei/qhd.jsp</result>
+            <result name="cd2">/html/destination/he-bei/cd.jsp</result>
+            <result name="zb">/html/destination/he-bei/zb.jsp</result>
+            <result name="sls">/html/destination/he-bei/sls.jsp</result>
+            <result name="ly">/html/destination/he-bei/ly.jsp</result>
+            <result name="lmsk">/html/destination/he-bei/lmsk.jsp</result>
+
+<!--            内蒙古、东北-->
+            <result name="hlbe">/html/destination/nei-meng-gu/hlbe.jsp</result>
+            <result name="aes">/html/destination/nei-meng-gu/aes.jsp</result>
+            <result name="hle">/html/destination/nei-meng-gu/hle.jsp</result>
+            <result name="heb">/html/destination/nei-meng-gu/heb.jsp</result>
+            <result name="mh">/html/destination/nei-meng-gu/mh.jsp</result>
+            <result name="xx">/html/destination/nei-meng-gu/xx.jsp</result>
+            <result name="dl2">/html/destination/nei-meng-gu/dl.jsp</result>
+        </action>
+
+    </package>
+</struts>

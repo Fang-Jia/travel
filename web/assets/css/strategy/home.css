@@ -1,0 +1,41 @@
+
+.nav{
+    margin-bottom: 40px;
+}
+.strategy-inner{
+    margin: 0px 70px 0px 150px;
+    height: 250px;
+}
+.strategy-inner:hover{
+    background-color: rgba(236,235,240,0.6);
+}
+.strategy h2{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+}
+.strategy p{
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 16px;
+    line-height: 30px;
+}
+.strategy span{
+    color: #ff9d00;
+}
+.strategy img{
+    float: left;
+    width: 25%;
+    margin-right: 20px;
+}
+.strategy-inner .time{
+    float: right;
+    color: #ff9d00;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+#page{
+    text-align: right;
+    margin-right: 130px;
+}
